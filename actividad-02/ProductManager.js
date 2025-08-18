@@ -16,7 +16,9 @@ class ProductManager {
       } else {
         this.products = [];
       }
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
   }
   
   async addProduct(nombre) {
