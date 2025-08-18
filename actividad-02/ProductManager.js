@@ -7,12 +7,31 @@ class ProductManager {
     this.products = products;
   }
 
+  
+  async loadProducts() {
+    try {
+      const data = await fs.readFile(this.path);
+      if (data) {
+        this.products = JSON.parse(data);
+      } else {
+        this.products = [];
+      }
+    } catch (error) {}
+  }
+  
   async addProduct(nombre) {
+    await this.loadProducts();
+    const nombreMayus = nombre.toUpperCase();
+    if (this.products.some((p) => p.nombre === nombreMayus)) {
+      console.log(`El producto "${nombreMayus}" ya existe`);
+      return;
+    }
     const id = crypto.randomUUID();
     this.products.push({
       id: id,
-      nombre: nombre.toUpperCase(),
+      nombre: nombreMayus,
     });
+
     await this.saveProducts();
   }
 
@@ -25,18 +44,11 @@ class ProductManager {
     await fs.writeFile(this.path, data);
   }
 
-  getProductNombre(nombre) {
-    const product = this.products.find((p) => p.nombre === nombre.toUpperCase());
-    if (!product) {
-      console.log("No hay");
-      return {};
-    }
-    return product;
-  }
-  getProductById(id) {
+  async getProductById(id) {
+    await this.loadProducts();
     const product = this.products.find((p) => p.id === id);
     if (!product) {
-      console.log("No hay");
+      console.log("No hay el id");
       return {};
     }
     return product;

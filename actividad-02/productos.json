@@ -1,14 +1,14 @@
 [
   {
-    "id": "d604953f-803f-42f7-9ed6-f476c9f6acab",
-    "nombre": "COCINA"
+    "id": "37badfd9-8169-4824-9851-1e32d412f9ae",
+    "nombre": "PLANCHA"
   },
   {
-    "id": "fc4d8722-c357-4e1f-8f75-a45d6e57d72c",
+    "id": "c4715c71-497e-4209-928d-b364bb1ef2aa",
     "nombre": "HELADERA"
   },
   {
-    "id": "d6888836-2d1b-420a-8c7b-bacf5d85fcc2",
+    "id": "54d62791-d117-4bd4-bd99-8596115b2fc3",
     "nombre": "MICROONDAS"
   }
 ]
