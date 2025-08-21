@@ -39,20 +39,20 @@ async function saveProducts() {
 async function accionesProduct() {
   await saveProducts();
   console.log("Productos guardados");
-  const data = p1.getProducts();
+  const data =  await p1.getProducts();
   console.table(data);
   const producto = await p1.getProductById(
-    "cdb2cb8e-3cf6-4b19-9ae3-ed68c5a9f7ee"
-  );
-  console.log("id encontrado:");
+    "5c792205-9483-47fb-b5c7-e239e4ff457c"
+  ); 
+   console.log("producto encontrado");
   console.table(producto);
 
-  const actualizado = await p1.updateProduct("802f600d-d798-4c71-b086-d5e9e93f0fd3" , precio= 180800);
+  const actualizado = await p1.updateProduct("5c792205-9483-47fb-b5c7-e239e4ff457c" , precio= 20800);
   console.log("producto actualizado");
   console.table(actualizado);
   const dataN = await p1.getProducts();
   console.table(dataN);
-  const eliminado =await p1.deleteProductByid("320e321d-8d76-404a-93d1-43694deeb337");
+  const eliminado =await p1.deleteProductByid("6cd2da09-36e2-46cb-9484-108bf42db3a1");
   console.log(eliminado);
   
 }

@@ -2,6 +2,7 @@ const fs = require("fs/promises");
 class ProductManager {
   path = "productos.json";
   products = [];
+ 
 
   constructor(products = []) {
     this.products = products;
@@ -59,7 +60,7 @@ class ProductManager {
     return product;
   }
   async deleteProductByid(id) {
-    //leo os productos 
+    //leo los productos 
     await this.loadProducts();   
    //buscamos el id
     const index =this.products.findIndex(p=> p.id==id);

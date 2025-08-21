@@ -1,18 +1,18 @@
 [
   {
-    "id": "cdb2cb8e-3cf6-4b19-9ae3-ed68c5a9f7ee",
+    "id": "5c792205-9483-47fb-b5c7-e239e4ff457c",
     "nombre": "PLANCHA",
-    "precio": 5000,
+    "precio": 180800,
     "color": "rosa"
   },
   {
-    "id": "802f600d-d798-4c71-b086-d5e9e93f0fd3",
+    "id": "55097032-5969-4d8a-b974-e1c43becc917",
     "nombre": "HELADERA",
-    "precio": 180800,
+    "precio": 600,
     "color": "gris "
   },
   {
-    "id": "b5e555e0-a5a1-400b-9eb9-56a6d1ae57ec",
+    "id": "d456f324-e8b5-44ba-b8ee-fbc239646325",
     "nombre": "MICROONDAS",
     "precio": 7800,
     "color": "negro"
