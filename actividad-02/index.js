@@ -26,6 +26,9 @@ server.listen( port, () => {
     console.log(`Servidor Web en el puerto ${port}`);
 })
 
+
+//crud 
+
 const ProductManager = require("./ProductManager");
 const p1 = new ProductManager();
 async function saveProducts() {
@@ -60,3 +63,4 @@ async function accionesProduct() {
 
 
 accionesProduct();
+

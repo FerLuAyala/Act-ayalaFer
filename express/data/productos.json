@@ -1,0 +1,37 @@
+[
+  {
+    "id": "5c792205-9483-47fb-b5c7-e239e4ff457c",
+    "nombre": "PLANCHA",
+    "precio": 25800,
+    "color": "Negro",
+    "stocks": 8
+  },
+  {
+    "id": "55097032-5969-4d8a-b974-e1c43becc917",
+    "nombre": "HELADERA",
+    "precio": 600,
+    "color": "gris ",
+    "stocks": 3
+  },
+  {
+    "id": "d456f324-e8b5-44ba-b8ee-fbc239646325",
+    "nombre": "MICROONDAS",
+    "precio": 7800,
+    "color": "negro",
+    "stocks": 8
+  },
+  {
+    "id": "d456f324-e8b5-44ba-b8ee-fbc239646789",
+    "nombre": "HORNO",
+    "precio": 7800,
+    "color": "gris",
+    "stocks": 8
+  },
+  {
+    "id": "6511d1da-9366-4954-b302-5627c0f747de",
+    "nombre": "VAJILLA",
+    "precio": 25800,
+    "color": "Negro",
+    "stocks": 5
+  }
+]
